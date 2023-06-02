@@ -45,44 +45,98 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
-
 .container {
+  max-width: 428px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+@media screen and (min-width: 768px) {
+  .container { 
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container { 
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+  
+ 
+
+/* .container {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
+
+
 /* Хедер */
 
-.page-header {
+.list-header {
+  display: none;
+}
+
+.list-contacts {
+  display: none;
+}
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-menu-open-btn {
+  display: flex;
+  
+}
+
+.logo-mobile {
+  color: var(--main-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+}
+/* .page-header {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+} */
 
-.page-header-container {
+/* .page-header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
-.page-navigation {
+/* .page-navigation {
   display: flex;
   align-items: center;
-}
+} */
 
-.list-header {
+/* .list-header {
   display: flex;
   gap: 40px;
-}
+} */
 
-.list-contacts {
+/* .list-contacts {
   display: flex;
   gap: 40px;
-}
+} */
 
 .logo {
   color: var(--main-color);
@@ -207,7 +261,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/people-office.jpg");
+    url("../images/imghtml/bg.jpg");
   background-size: cover;
   max-width: 1440px;
   background-repeat: no-repeat;
