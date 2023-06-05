@@ -22,7 +22,7 @@
     <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-navigation">
-          <a href="./index.html" class="logo-mobile link"
+          <a href="./index.html" class="logo link"
             >Web<span class="accent-header">Studio</span>
           </a>
           <ul class="list list-header">
@@ -33,7 +33,7 @@
             <li><a href="" class="link item">Contacts</a></li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open-btn">
+        <button type="button" class="mobile-menu-open-btn js-open-menu">
           <svg class="mobile-menu-open-btn-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -54,9 +54,86 @@
           </ul>
         </address>
       </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+            <ul class="mobile-list-header list ">
+              <li>
+                <a href="./index.html" class="link mobile-item mobile-item-studio">Studio</a></li>
+              <li><a href="./portfolio.html" class="link mobile-item mobile-portfolio">Portfolio</a></li>
+              <li><a href=""class="link mobile-item mobile-contacts">Contacts</a></li>
+            </ul>
+            <div class="mobile-list-wrapper">
+              <ul class="list mobile-list-contacts">
+              <li>
+                <a href="tel:+110001111111" class="link mobile-tel"
+                >+11 (000) 111-11-11</a></li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="link mobile-email"
+                >info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile-social-list list">
+              <li class="mobile-social-list-item">
+                <a href="" class="mobile-social-list-link">
+                  <svg
+                    class="mobile-social-list-icon"
+                    aria-label="іконка інстаграму"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-list-item">
+                <a href="" class="mobile-social-list-link">
+                  <svg
+                    class="mobile-social-list-icon"
+                    aria-label="іконка твітера"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-list-item">
+                <a href="" class="mobile-social-list-link">
+                  <svg
+                    class="mobile-social-list-icon"
+                    aria-label="іконка фейсбука"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-list-item">
+                <a href="" class="mobile-social-list-link">
+                  <svg
+                    class="mobile-social-list-icon"
+                    aria-label="іконка лінкедина"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            </div>
+            
+
+          </div>
+      </div>
     </header>
 
-    <!-- <main>
+    <main>
       <section class="section-color">
         <div class="container main-block">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
@@ -81,7 +158,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Strategy</h3>
+              <h3 class="subtitle subtitle-tablet">Strategy</h3>
               <p class="description-subtitle-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -98,7 +175,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Punctuality</h3>
+              <h3 class="subtitle subtitle-tablet">Punctuality</h3>
               <p class="description-subtitle-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -116,7 +193,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Diligence</h3>
+              <h3 class="subtitle subtitle-tablet">Diligence</h3>
               <p class="description-subtitle-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -134,7 +211,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Technologies</h3>
+              <h3 class="subtitle subtitle-tablet">Technologies</h3>
               <p class="description-subtitle-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -142,9 +219,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+      
 
-      <!-- <section class="pic-section">
+      <!-- !--What are we doing  -->
+
+      <section class="pic-section">
         <div class="container">
           <h2 class="heading">What are we doing</h2>
           <ul class="list list-pic">
@@ -167,16 +247,16 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- ==========Наша команда============ -->
 
-      <!-- <section class="team-color">
+      <section class="team-color">
         <div class="container team">
           <h2 class="heading">Our Team</h2>
           <ul class="list list-team">
             <li class="teamcard-color">
-              <img
+              <img srcset="../images/imghtml/imgteam1.jpg 1x, ../images/imghtml/imgteam1@2x.jpg 2x"
                 class="team-foto"
                 src="../images/imghtml/imgteam1.jpg"
                 alt="Mark Guerrero"
@@ -238,7 +318,7 @@
               </div>
             </li>
             <li class="teamcard-color">
-              <img
+              <img srcset="../images/imghtml/imgteam2.jpg 1x, ../images/imghtml/imgteam2@2x.jpg 2x"
                 class="team-foto"
                 src="../images/imghtml/imgteam2.jpg"
                 alt="Tom Ford"
@@ -300,7 +380,7 @@
               </div>
             </li>
             <li class="teamcard-color">
-              <img
+              <img srcset="../images/imghtml/imgteam3.jpg 1x, ../images/imghtml/imgteam3@2x.jpg 2x"
                 class="team-foto"
                 src="../images/imghtml/imgteam3.jpg"
                 alt="Camila Garcia"
@@ -363,7 +443,7 @@
             </li>
 
             <li class="teamcard-color">
-              <img
+              <img srcset="../images/imghtml/imgteam4.jpg 1x, ../images/imghtml/imgteam4@2x.jpg 2x"
                 class="team-foto"
                 src="../images/imghtml/imgteam4.jpg"
                 alt="Daniel Wilson"
@@ -426,11 +506,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Клієнти -->
 
-      <!-- <section class="customers-item">
+      <section class="customers-item">
         <div class="container">
           <h2 class="heading-customers">Customers</h2>
           <ul class="customers-list list">
@@ -501,7 +581,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!-- <footer class="footer-list">
       <div class="container footer-item">
@@ -667,5 +747,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
