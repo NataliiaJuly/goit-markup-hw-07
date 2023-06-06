@@ -1281,7 +1281,7 @@ body {
 .customers-list-item {
   
   /* width: calc((100%-120px) / 6); */
-  width: 190px;
+  width: 168px;
   height: 88px;
 }
 
@@ -1498,7 +1498,7 @@ body {
 .footer-items-list {
   justify-content: center;
   gap: 16px;
-}
+}subscribe-wrapper
 .footer-item-text {
   display: flex;
   justify-content: center;
@@ -1560,7 +1560,7 @@ body {
   margin-bottom: 16px;
 }
 
-.subcribe-label {
+.subscribe-label {
   margin-bottom: 16px; 
 }
 
@@ -1620,7 +1620,10 @@ body {
 
 
 /* ==============Tablet Footer============== */
-/* .logo-footer {
+
+@media screen and (min-width: 768px) {
+
+.logo-footer {
   color: var(--main-color);
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -1632,21 +1635,21 @@ body {
   margin-bottom: 16px;
 } */
 
-/* .footer-list {
+.footer-list {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
-} */
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
 
-/* .accent-footer {
+.accent-footer {
   color: #f4f4fd;
-} */
+}
 
-/* .footer-list-icon {
+.footer-list-icon {
   fill: #f4f4fd;
-} */
+}
 
-/* .text-footer {
+.text-footer {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1654,9 +1657,9 @@ body {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-} */
+}
 
-/* .footer-list-link {
+.footer-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1665,19 +1668,19 @@ body {
   border-radius: 50%;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
-/* .footer-list-link:hover,
+.footer-list-link:hover,
 .footer-list-link:focus {
   background-color: #31d0aa;
-} */
+}
 
-/* .footer-items-list {
+.footer-items-list {
   justify-content: center;
   gap: 16px;
-} */
+}
 
-/* .footer-item-text {
+.footer-item-text {
   display: flex;
   align-items: flex-start;
   font-family: "Roboto", sans-serif;
@@ -1688,48 +1691,60 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
-} */
+}
 
-/* .footer-item {
+.footer-item {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: baseline;
-} */
+}
 
-/* .left-footer {
-  margin-right: 120px;
-} */
+.left-footer {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 24px;
+  margin-left: 92px;
+}
 
 /* .footer-list-item {
     
 } */
 
-/* .footer-right {
-  display: inline;
-} */
+.footer-right {
+  display: flex;
+}
 
-/* .form-wrapper {
+.form-wrapper {
     display: flex;
-} */
+    
+}
 
-/* .subscribe-wrapper {
-  margin-left: 80px;
-} */
+.subscribe-wrapper {
+  margin-left: 92px;
+  display: flex;
+  /* flex-direction: row; */
+  
+  /* width: 100%; */
+}
 
-/* .text-subscribe {
+.text-subscribe {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
-} */
+}
 
-/* .subcribe-lable {
-    margin-right: 24px; 
-} */
-/* .subscribe-input {
-  width: 264px;
+.subscribe-label {
+    margin: 0;
+}
+.subscribe-input {
+ 
+  max-width: 264px;
   height: 40px;
+  margin: 0;
   padding-left: 16px;
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1740,19 +1755,20 @@ body {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-} */
-/* .subscribe-input::placeholder {
+}
+.subscribe-input::placeholder {
   display: flex;
   align-items: center;
 
   color: #ffffff;
-} */
-/* .subscribe-btn {
+}
+.subscribe-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40x;
+  height: 40px;
   min-width: 165px;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1764,16 +1780,16 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-/* .subscribe-btn:hover,
+}
+.subscribe-btn:hover,
 .subscribe-btn:focus {
     background-color: #404bbf;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-} */
-/* .subscribe-icon {
-    margin-left: 16px;
-} */
-
+}
+.subscribe-icon {
+  margin-left: 16px;
+} 
+}
 
 /* ================Desktop Footer=============== */
 
@@ -1880,7 +1896,7 @@ body {
   margin-bottom: 16px;
 }
 
-.subcribe-lable {
+.subscribe-label {
     margin-right: 24px; 
 }
 .subscribe-input {
