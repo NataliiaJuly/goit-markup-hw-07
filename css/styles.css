@@ -79,6 +79,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.accent-header {
+  color: #2e2f42;
+}
 
 .list-header {
   display: none;
@@ -310,9 +313,9 @@ body {
     color: #434455;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     font-style: normal;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -454,7 +457,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/imghtml/mobile-bg@1x.jpg");
+    url(../images/imghtml/mobile-bg@1x.jpg);
   background-size: cover;
   max-width: 428px;
   background-repeat: no-repeat;
@@ -465,7 +468,7 @@ body {
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .main-section {
+  .section-color {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -521,7 +524,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/imghtml/tablet-bg.jpg");
+      url(../images/imghtml/tablet-bg.jpg);
     max-width: 768px;
     
   }
@@ -530,7 +533,7 @@ body {
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .main-section {
+    .section-color {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -556,7 +559,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/imghtml/bg.jpg");
+      url(../images/imghtml/bg.jpg);
     max-width: 1440px;
    
   }
@@ -565,7 +568,7 @@ body {
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .main-section {
+    .section-color {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -597,7 +600,7 @@ body {
 
 
 @media screen and (max-width: 1157px) {
-  .subtitle {
+  .subtitle-tablet {
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -777,7 +780,7 @@ body {
     gap: 72px;
   }
 
-  .subtitle {
+  .subtitle-team {
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -805,7 +808,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 24px;
+      gap: 72px 24px;
     }
     .subtitle-tablet {
       text-align: start;
@@ -854,7 +857,7 @@ body {
     padding: 32px 0;
   }
 
-  .subtitle {
+  .subtitle-team {
     text-align: center;
   }
   .subtitle-text {
@@ -1022,6 +1025,7 @@ body {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 16px;
   row-gap: 72px;
 }
